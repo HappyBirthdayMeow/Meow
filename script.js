@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     celebrateButton.addEventListener('click', () => {
-      window.location.href = '/happybirthday.html';
+      window.location.href = 'happybirthday.html';
     });
   
     document.getElementById('prev-month').addEventListener('click', () => {
