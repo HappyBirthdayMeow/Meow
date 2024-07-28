@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="widget-container">
+      <div class="current-date-square">
+        <div id="date-display"></div>
+      </div>
+      <div class="events">
+        <h3>Events</h3>
+        <ul id="event-list">
+        </ul>
+      </div>
+      <div class="countdown">
+        <h3>Countdown to Special Date</h3>
+        <div id="countdown-display">
+          <div class="countdown-item">
+            <span id="countdown-days" class="countdown-value"></span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span id="countdown-hours" class="countdown-value"></span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span id="countdown-minutes" class="countdown-value"></span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span id="countdown-seconds" class="countdown-value"></span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+        <button id="celebrate-button" style="display: none;">Psst.. There is a message for you!</button>
+      </div>
+    </div>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button id="prev-month">&lt;</button>
+        <h2 id="month-year"></h2>
+        <button id="next-month">&gt;</button>
+      </div>
+      <div class="calendar-grid">
+        <div class="day-labels">
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+          <div>Sun</div>
+        </div>
+        <div id="calendar-days">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="balloon-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

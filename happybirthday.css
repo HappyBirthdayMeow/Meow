@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Kaushan Script', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .fade-in-text {
+    font-size: 2.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .photo-container {
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .photo-container img#photo {
+    max-width: 250px; 
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  .photo-container img#cap {
+    position: absolute;
+    top: 11px; 
+    left: 33%;
+    transform: translateX(-50%) rotate(-26deg); 
+    max-width: 110px; 
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .fade-in-text {
+      font-size: 2rem;
+    }
+  
+    .photo-container img#photo {
+      max-width: 200px;
+    }
+  
+    .photo-container img#cap {
+      max-width: 80px;
+      top: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fade-in-text {
+      font-size: 1.5rem;
+      max-width: 90%;
+    }
+  
+    .photo-container img#photo {
+      max-width: 160px;
+    }
+  
+    .photo-container img#cap {
+      max-width: 80px;
+      top: 11px;
+    }
+  }
+  
